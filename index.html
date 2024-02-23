@@ -1,7 +1,251 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 0px solid #ccc;
+  width: 80%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
 <body>
-<h1>Hello World!</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h1>Learning to Learn Learning Centre</h1>
+<h2>中學數學網上補習</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openPage(event, 'Section1')" id="defaultOpen">補習形式</button>
+  <button class="tablinks" onclick="openPage(event, 'Section2')">導師資歷</button>
+  <button class="tablinks" onclick="openPage(event, 'Section3')">初中課程</button>
+  <button class="tablinks" onclick="openPage(event, 'Section4')">高中課程</button>
+  <button class="tablinks" onclick="openPage(event, 'Section5')">文憑試操卷班</button>
+  <button class="tablinks" onclick="openPage(event, 'Section9')">聯絡我們</button>
+</div>
+
+<div id="Section1" class="tabcontent">
+  <h2>補習形式</h2>
+  <p>Learning to Learn 採用全網上補習形式。</p>
+  <p>上課時間更有彈性。</p>
+  <p>學生可以安坐家中上課，更能專注於學習。</p>
+</div>
+
+<div id="Section2" class="tabcontent">
+  <h2>導師資歷</h2>
+  <p>David Lo（羅 Sir）</p>
+  <p><li>中文大學數學教育碩士</li></p>
+  <p><li>中文大學教育文憑</li></p>
+  <p><li>教育局註冊教員</li></p>
+  <p><li>曾任中學教師，中文大學、理工大學數學及電腦科講師</li></p>
+  <p><li>精製獨家筆記，鍛鍊學生數感</li></p>
+  <p><li>任教學生包括曾肇添、民生書院、沙官、沙崇、蘇浙、培英、鄭榮之等</li></p>
+</div>
+
+<div id="Section3" class="tabcontent">
+<h2>初中級　數學科專科補習課程</h2>
+<p>1. 緊貼校內課程，鞏固每週學習內容。</p>
+<p>2. 協助學生釐清數學概念和重點，靈活運用至所有課題。</p>
+<p>3. 英數班支援：強調英語題目理解及應用，幫助英教數學生應付全新環境。</p>
+<br>
+<p>學費：$640（四節）</p>
+<p>每週一節。每節一小時十分鐘。</p>
+<br>
+<p>課堂採用 <a href="https://www.webex.com" target="_blank">Webex by Cisco</a> 遙距上課。程式可於網上免費<a href="https://www.webex.com/downloads.html" target="_blank">下載</a>。</p>
+<p>學生需自備上課器材。設備需能上網，包含螢幕、鏡頭和語音功能。</p>
+<p>螢幕尺寸對學習品質有很大程度影響。</p>
+<p>建議使用平板、筆記型或桌上電腦。一般手機螢幕較小未必合適。</p>
+<p>Whatsapp：<a href="https://wa.me/85295254079?text=你好。我想查詢初中補習課程。" target="_blank">9525 4079</a>（羅 Sir）</p>
+<p>請留言「我想查詢初中補習課程」。我們會盡快回覆。</p>
+<br>
+<h3>主要課程內容。</h3>
+<p><b>中一級</b></p>
+<p>1.Directed Numbers and the Number Line</p>
+<p>2.Introduction to Algebra</p>
+<p>3.Algebraic Equations in One Unknown</p>
+<p>4.Percentages</p>
+<p>5.Estimation in Numbers and Measurement</p>
+<p>6.Introduction to Geometry</p>
+<p>7.Symmetry and Transformation</p>
+<p>8.Areas and Volumes</p>
+<p>9.Congruence and Similarity</p>
+<p>10.Introduction to Coordinates</p>
+<p>11.Angles related to Lines</p>
+<p>12.Manipulation of Simple Polynomials</p>
+<p>13.Introduction to Various Stages of Statistics</p>
+<p>14.Simple Statistical Diagrams and Graphs</p>
+<br>
+<p><b>中二級</b></p>
+<p>1.Rate and Ratio</p>
+<p>2.Identities anf Factorization</p>
+<p>3.Algebraic Fractions and Formulas</p>
+<p>4.More about Factorization of Polynomials</p>
+<p>5.Approximation and Errors</p>
+<p>6.Angles related to Rectinear Figures</p>
+<p>7.Simple Statistical Diagrams and Graphs</p>
+<p>8.Linear Equations in Two Unknowns</p>
+<p>9.Laws of Integral Indices</p>
+<p>10.Introduction to Deductive Geometry</p>
+<p>11.Rational and Irrational Numbers</p>
+<p>12.Pythagoras’ Theorem</p>
+<p>13.Areas and Volumes (II)</p>
+<p>14.Trigonometric Ratios</p>
+<br>
+<p><b>中三級</b></p>
+<p>1.Linear Inequalities in One Unknown</p>
+<p>2.Percentages (II)</p>
+<p>3.Specials Lines and Centres in a Triangle</p>
+<p>4.Quadrilaterals</p>
+<p>5.More about 3-D Figures</p>
+<p>6.Measures of Central Tendency</p>
+<p>7.Area and Volumes (III)</p>
+<p>8.Coordinate Geometry of Striaght Lines</p>
+<p>9.Trigonometirc Relations</p>
+<p>10.Applications of Trigonometry</p>
+<p>11.Introduction to Probability</p>
+</div>
+
+<div id="Section4" class="tabcontent">
+<h2>中學文憑試　數學科應試補習課程</h2>
+<p>1. 緊貼校內課程。為核心、M1 及 M2 學生提供合適的學習進度。</p>
+<p>2. 提供公開試試題及模擬試卷操練。</p>
+<p>3. 強調釐清概念，數學知識能跨課題運用。</p>
+<br>
+<p>學費：$720（四節）</p>
+<p>每週一節。每節一小時十分鐘。</p>
+<br>
+<p>課堂採用 <a href="https://www.webex.com" target="_blank">Webex by Cisco</a> 遙距上課。程式可於網上免費<a href="https://www.webex.com/downloads.html" target="_blank">下載</a>。</p>
+<p>學生需自備上課器材。設備需能上網，包含螢幕、鏡頭和語音功能。</p>
+<p>螢幕尺寸對學習品質有很大程度影響。</p>
+<p>建議使用平板、筆記型或桌上電腦。一般手機螢幕較小未必合適。</p>
+<p>Whatsapp：<a href="https://wa.me/85295254079?text=你好。我想查詢高中補習課程。" target="_blank">9525 4079</a>（羅 Sir）</p>
+<p>請留言「我想查詢高中補習課程」。我們會盡快回覆。</p>
+<br>
+<h3>主要課程內容。</h3>
+<p><b>中四級</b></p>
+<p>1.Quadratic Equations in One Unknown (I)</p>
+<p>2.Quadratic Equations in One Unknown (II)</p>
+<p>3.Functions and Graphs</p>
+<p>4.Equations of Straight Lines</p>
+<p>5.More about Polynomials</p>
+<p>6.Expoential Functions</p>
+<p>7.Logarithmic Functions</p>
+<p>8.More about Equations</p>
+<p>9.Variations</p>
+<p>10.More about Trigonometry</p>
+<p></p>
+<p><b>中五級</b></p>
+<p>1. More about Quadratic Equations</p>
+<p>2. Basic Properties of Circles</p>
+<p>3. Tangents to Circles</p>
+<p>4. Locus</p>
+<p>5. Equations of Circles</p>
+<p>6. Inequalities</p>
+<p>7. Linear Programming</p>
+<p>8. More about Graphs of Functions</p>
+<p>9. Permutation and Combination</p>
+<p>10. More about Probability</p>
+<p></p>
+<p><b>中六級</b></p>
+<p>1. Arithmetic and Geometric Sequences</p>
+<p>2. Summation of Arithmetic and Geometric Sequences</p>
+<p>3. Application of Trigonometry in 2D</p>
+<p>4. Application of Trigonometry in 3D</p>
+<p>5. Measures of Dispersion</p>
+<br>
+<p>另備 M2 課程。歡迎查詢。</p>
+</div>
+
+<div id="Section5" class="tabcontent">
+<h2>文憑試操卷班（Compulsory、M1 及 M2）</h2>
+<p>此課程專為預備文憑試（HKDSE）而設。</p>
+<p>課程內容由淺入深講解 HKDSE 設立至今的 Past Paper。</p>
+<p>學生可選擇「按年份」、「按課題」或「按程度」進行講解。</p>
+<br>
+<p>為配合學習目標，學生需先掌握初中課程才能有較好的學習效果。</p>
+<p>一般而言。</p>
+<p>無修讀 M1/M2 的學生可在中五考慮「Compulsory 操卷班」。</p>
+<p>修讀 M1/M2 學生則可在中四考慮「Compulsory 操卷班」。</p>
+<p>而「M1/M2 操卷班」則建議在中五開始修讀。</p>
+<br>
+<p>對象：中四、中五及中六。</p>
+<p>學費：$720（四節）</p>
+<p>每週一節。每節一小時十分鐘。</p>
+<p>（中六學生可選擇每週多節以更好狀態備戰公開試。歡迎查詢時間。）</p>
+<br>
+<p>課堂採用 <a href="https://www.webex.com" target="_blank">Webex by Cisco</a> 遙距上課。程式可於網上免費<a href="https://www.webex.com/downloads.html" target="_blank">下載</a>。</p>
+<p>學生需自備上課器材。設備需能上網，包含螢幕、鏡頭和語音功能。</p>
+<p>螢幕尺寸對學習品質有很大程度影響。</p>
+<p>建議使用平板、筆記型或桌上電腦。一般手機螢幕較小未必合適。</p>
+<p>Whatsapp：<a href="https://wa.me/85295254079?text=你好。我想查詢文憑試操卷班課程。" target="_blank">9525 4079</a>（羅 Sir）</p>
+<p>請留言「我想查詢文憑試操卷班課程」。我們會盡快回覆。</p>
+</div>
+
+<div id="Section9" class="tabcontent">
+<h2>聯絡我們</h2>
+<p>Whatsapp：<a href="https://wa.me/85295254079?text=你好。我想查詢數學網上補習課程。" target="_blank">9525 4079</a>（羅 Sir）</p>
+<p>請留言「我想查詢數學網上補習課程」。我們會盡快回覆。</p>
+</div>
+
+<script>
+function openPage(evt, pageName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pageName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-</html>
+</html> 
