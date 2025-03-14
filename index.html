@@ -6,19 +6,30 @@
 * {box-sizing: border-box}
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #00ff00;
+	background-color: #F1F8E9;
 	}
 .header {
-	background-color: #008000;
+	background-color: #1B5E20;
 	padding: 20px;
 	text-align: center;
 	}
+
+/* Style the Table */	
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+}
+
+.item {
+  padding: 5px;
+}
+
 
 /* Style the tab */
 .tab {
   float: left;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #A5D6A7;
   width: 20%;
   height: 300px;
 }
@@ -124,20 +135,22 @@ body {
 <br>
 <h3>主要課程內容。</h3>
 <p><b>中一級</b></p>
-<p>1.Directed Numbers and the Number Line</p>
-<p>2.Introduction to Algebra</p>
-<p>3.Algebraic Equations in One Unknown</p>
-<p>4.Percentages</p>
-<p>5.Estimation in Numbers and Measurement</p>
-<p>6.Introduction to Geometry</p>
-<p>7.Symmetry and Transformation</p>
-<p>8.Areas and Volumes</p>
-<p>9.Congruence and Similarity</p>
-<p>10.Introduction to Coordinates</p>
-<p>11.Angles related to Lines</p>
-<p>12.Manipulation of Simple Polynomials</p>
-<p>13.Introduction to Various Stages of Statistics</p>
-<p>14.Simple Statistical Diagrams and Graphs</p>
+<div class="container">
+  <div class="item">1.Directed Numbers and the Number Line</div><div class="item">Column</div>
+  <div class="item">2.Introduction to Algebra</div><div class="item">Column</div>
+  <div class="item">3.Algebraic Equations in One Unknown</div><div class="item">Column</div>
+  <div class="item">4.Percentages</div><div class="item">Column</div>
+  <div class="item">5.Estimation in Numbers and Measurement</div><div class="item">Column</div>
+  <div class="item">6.Introduction to Geometry</div><div class="item">Column</div>
+  <div class="item">7.Symmetry and Transformation</div><div class="item">Column</div>
+  <div class="item">8.Areas and Volumes</div><div class="item">Column</div>
+  <div class="item">9.Congruence and Similarity</div><div class="item">Column</div>
+  <div class="item">10.Introduction to Coordinates</div><div class="item">Column</div>
+  <div class="item">11.Angles related to Lines</div><div class="item">Column</div>
+  <div class="item">12.Manipulation of Simple Polynomials</div><div class="item">Column</div>
+  <div class="item">13.Introduction to Various Stages of Statistics</div><div class="item">Column</div>
+  <div class="item">14.Simple Statistical Diagrams and Graphs</div><div class="item">Column</div>
+</div>
 </div>
 
 <div id="Section82" class="tabcontent">
